@@ -33,7 +33,6 @@ To build with tup, simply invoke it at the root of the project directory:
 cd OpenSolo/artoo
 vagrant up
 vagrant ssh
-apt-get update
 cd /vagrant
 tup
 
