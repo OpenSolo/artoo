@@ -20,16 +20,16 @@ const UiBottomBox::Msg UiBottomBox::msgs[] = {
 
 
     /// Pre-flight - Artoo
-    { Event::SoloAppConnected, NoUserInput, 5000, "3DR Solo app connected", NULL },
+    { Event::SoloAppConnected, NoUserInput, 5000, "Mobile app connected", NULL },
 
-    { Event::SoloAppDisconnected, NoUserInput, 5000, "3DR Solo app disconnected", NULL },
+    { Event::SoloAppDisconnected, NoUserInput, 5000, "Mobile app disconnected", NULL },
 
     // Persistent alerts
     { Event::ControllerValueOutOfRange, NoUserInput, 5000, "Control stick error", "Contact 3DR Support"},
     { Event::CamControlValueOutOfRange, NoUserInput, 5000, "Manual camera controls error", "Contact 3DR Support"},
 
     // Unused
-    { Event::RecordRequiresApp, NoUserInput, 5000, "3DR Solo app required for this action", NULL },
+    { Event::RecordRequiresApp, NoUserInput, 5000, "Mobile app required for this action", NULL },
 
     { Event::UnknownBattery, NoUserInput, 5000, "Unknown controller battery", "Displayed level may not be accurate" },
 
