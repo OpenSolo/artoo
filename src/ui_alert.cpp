@@ -12,13 +12,13 @@ const UiAlertManager::Alert UiAlertManager::alerts[] = {
     { Red, NoHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Calibrating ", "altitude", "Please wait", NULL },
 
     // CompassCalRequired
-    { Red, HighHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Compass ", "error", "Please calibrate compass using\nthe 3DR Solo app", NULL },
+    { Red, HighHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Compass ", "error", "Please calibrate compass using\nmobile app", NULL },
 
     // CompassInterference
     { Red, NoHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Magnetic ", "interference", "Move Solo away from metal objects", NULL },
 
     // LevelError
-    { Red, MedHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Level ", "error", "Please calibrate level using\nthe 3DR Solo app", NULL },
+    { Red, MedHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Level ", "error", "Please calibrate level using\nmobile app", NULL },
 
     // CalibrationFailed
     { Red, MedHaptic, FullScreenModal, NO_TIMEOUT, DismissA, "Motion ", "detected", "Take off from a steady surface", NULL },
@@ -41,7 +41,7 @@ const UiAlertManager::Alert UiAlertManager::alerts[] = {
     { Orange, NoHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Calibrating ", "level", "Follow app instructions", NULL },
 
     // CompassCalRecovery
-    { Green, NoHaptic, FullScreenModal, NO_TIMEOUT, DismissA, "Calibrated ", "compass", NULL, "Press A to dismiss" },
+    { Green, NoHaptic, FullScreenModal, NO_TIMEOUT, DismissA, "Calibrated ", "compass", NULL, "Press A to dismiss\nthen reboot solo" },
 
     // ThrottleError
     { Orange, LowHaptic, FullScreenModal, NO_TIMEOUT, DismissNone, "Lower ", "throttle", "This flight mode requires low\nthrottle before starting motors", NULL },
@@ -68,10 +68,10 @@ const UiAlertManager::Alert UiAlertManager::alerts[] = {
     { Green, NoHaptic, FullScreenModal, 7000, DismissNone, "Controller ", "inactive", "Powering off", NULL },
 
     // SoloAppConnected
-    { Green, NoHaptic, HintBoxBanner, 5000, DismissNone, NULL, NULL, "3DR Solo app connected", NULL },
+    { Green, NoHaptic, HintBoxBanner, 5000, DismissNone, NULL, NULL, "Mobile app connected", NULL },
 
     // SoloAppDisconnected
-    { Orange, NoHaptic, HintBoxBanner, 5000, DismissNone, NULL, NULL, "3DR Solo app disconnected", NULL },
+    { Orange, NoHaptic, HintBoxBanner, 5000, DismissNone, NULL, NULL, "Mobile app disconnected", NULL },
 
     // ControllerValueOutOfRange
     { Red, NoHaptic, FullScreenThenHintBox, 5000, DismissNone, "Control stick ", "error", "Contact 3DR Support", NULL },

@@ -698,7 +698,7 @@ void Ui::drawLockout()
 
     const Gfx::FontAsset & f = HelveticaNeueLTProRoman;
     Gfx::writeCanvasCenterJustified(168, "Required before first flight!", f);
-    Gfx::writeCanvasCenterJustified(168 + f.height() + 2, "Use 3DR Solo App to update", f);
+    Gfx::writeCanvasCenterJustified(168 + f.height() + 2, "Use mobile app to update", f);
 }
 
 Ui::State Ui::determineState()
