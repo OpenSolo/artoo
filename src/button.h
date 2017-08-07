@@ -31,7 +31,7 @@ public:
     static const unsigned ClickMillis = 300;
     static const unsigned ShortHoldMillis = ClickMillis;
     static const unsigned HoldMillis = 1500;
-    static const unsigned LongHoldMillis = 3000;
+    static const unsigned LongHoldMillis = 2500;
 
     Button(GPIOPin p, GPIOPin active, GPIOPin backlight, Io::ButtonID bid, Polarity pol = ActiveHigh);
 

@@ -166,7 +166,11 @@ const UiAlertManager::Alert UiAlertManager::alerts[] = {
     // ChargerConnected
     { White, NoHaptic, FullScreenModal, 3000, DismissNone, NULL, NULL, NULL, NULL },
 
-    
+    // CH-7 & CH-8 RC control
+    { Green, LowHaptic, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-7 Set Low", NULL },
+    { Green, LowHapticMed, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-7 Set High", NULL },
+    { Green, LowHaptic, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-8 Set Low", NULL },
+    { Green, LowHapticMed, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-8 Set High", NULL },
 
     /// Testing
 
@@ -270,6 +274,12 @@ void UiAlertManager::Alert::startHaptic() const
             break;
         case MedHaptic:
             Haptic::startPattern(Haptic::LightTriple);
+            break;
+        case LowHaptic:
+            Haptic::startPattern(Haptic::SingleShort);
+            break;
+        case LowHapticMed:
+            Haptic::startPattern(Haptic::SingleMedium);
             break;
         default:
             break;
