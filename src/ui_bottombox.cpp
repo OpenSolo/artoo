@@ -71,6 +71,12 @@ const UiBottomBox::Msg UiBottomBox::msgs[] = {
 
     /// Misc
     { Event::LandingComplete, NoUserInput, 5000, "Landing complete", NULL },
+    
+    // RC Channels
+    { Event::CH7low, NoUserInput, 5000, "CH-7 Off/Low", NULL },
+    { Event::CH7high, NoUserInput, 5000, "CH-7 On/High", NULL },
+    { Event::CH8low, NoUserInput, 5000, "CH-8 Off/Low", NULL },
+    { Event::CH8high, NoUserInput, 5000, "CH-8 On/High", NULL },
 
     /// Testing
     { Event::TestAlert, NoUserInput, 5000, "RTL not available without GPS", "(Test test)" },

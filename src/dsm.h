@@ -3,6 +3,8 @@
 
 #include "button.h"
 #include "hostprotocol.h"
+#include "ui.h"
+#include "haptic.h"
 
 /*
  * SPKT/DSM channels are used to send values between
@@ -24,6 +26,7 @@ public:
 
     void init();
     void onLoiterButtonEvt(Button *b, Button::Event evt);
+    void onBButtonEvt(Button *b, Button::Event evt);
 
     void producePacket(HostProtocol::Packet &pkt);
 

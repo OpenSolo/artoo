@@ -229,6 +229,7 @@ void ButtonManager::dispatchEvt(Button *b, Button::Event evt)
         FlightManager::instance.onBButtonEvt(b, evt);
         VehicleConnector::instance.onButtonEvent(b, evt);
         ButtonFunction::onButtonEvent(b, evt);
+        Dsm::instance.onBButtonEvt(b, evt);
         break;
 
     case Io::ButtonPreset1:
