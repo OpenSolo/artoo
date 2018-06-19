@@ -65,6 +65,10 @@ const char *FlightManager::flightModeStr(FlightMode m)
     case AVOID_ADSB:    return "ADS-B AVOID";
     case GUIDED_NOGPS:  return "Guided No GPS";
     case SMART_RTL:     return "Smart RTL";
+    case FBWA:          return "FBWA";
+    case FBWB:          return "FBWB";
+    case CRUISE:        return "Cruise";
+    case TRAINING:      return "Training";
     default:            return "Unknown";
     }
 }
