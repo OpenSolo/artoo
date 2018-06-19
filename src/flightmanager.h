@@ -36,6 +36,10 @@ public:
         AVOID_ADSB =   19,  // automatic avoidance of obstacles in the macro scale - e.g. full-sized aircraft
         GUIDED_NOGPS = 20,  // guided mode but only accepts attitude and altitude
         SMART_RTL =    21,  // SMART_RTL returns to home by retracing its steps
+        FBWA =         22,  // Roll and pitch follow stick input, up to set limits
+        FBWB =         23,  // like FBWA, but with automatic height and speed control
+        CRUISE =       24,  // like FBWB, but with ground course tracking and terrain following
+        TRAINING =     25,  // Manual control up to roll and pitch limits
         };   
 
     /*
@@ -104,7 +108,7 @@ public:
     }
     static const char *flightModeStr(FlightMode m);
     static bool flightModeIsAutonomous(FlightMode m) {
-        return (m == AUTO || m == GUIDED || m == LOITER || m == RTL || m == CIRCLE || m == DRIFT || m == POSHOLD || m == BRAKE || m == THROW || m == AVOID_ADSB || m == GUIDED_NOGPS || m == SMART_RTL );
+        return (m == AUTO || m == GUIDED || m == LOITER || m == RTL || m == CIRCLE || m == DRIFT || m == POSHOLD || m == BRAKE || m == THROW || m == AVOID_ADSB || m == GUIDED_NOGPS || m == SMART_RTL || m == FBWB || m == CRUISE );
     }
 
     ALWAYS_INLINE bool currentFlightModeManual() const {
